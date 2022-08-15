@@ -1,7 +1,7 @@
 ﻿using System;
-namespace SnakeLadder
+namespace Snake_Ladder
 {
-    public class Dice
+    public class DiceRoll
     {
         public int Rollingdie;
         public void roll()
@@ -15,7 +15,7 @@ namespace SnakeLadder
         static void Main(string[] args)
         {
             Random random = new Random();
-            Dice dice = new Dice();
+            DiceRoll dice = new DiceRoll();
             dice.Rollingdie = random.Next(1, 7);
             dice.roll();
         }
